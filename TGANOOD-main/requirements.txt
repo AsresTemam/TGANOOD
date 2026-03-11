@@ -1,0 +1,31 @@
+# ============================================================
+# TGAN-OOD — Requirements
+# Temporal GAN for Out-of-Distribution Social Event Detection
+# ============================================================
+
+# --- Core Deep Learning ---
+torch>=2.0.0
+torchvision>=0.15.0
+
+# --- Graph Neural Networks (torch_geometric) ---
+# Install PyG following https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html
+torch_geometric>=2.3.0
+# The three scatter/sparse ops below are needed by torch_geometric:
+torch-scatter>=2.1.0
+torch-sparse>=0.6.17
+torch-cluster>=1.6.0
+
+# --- Sentence Embeddings ---
+sentence-transformers>=2.2.2
+
+# --- Data Science ---
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+scikit-learn>=1.2.0
+
+# --- Graph utilities ---
+networkx>=3.0
+
+# --- Misc ---
+pickle5>=0.0.12   # only needed on Python < 3.8; safe to omit on 3.8+
